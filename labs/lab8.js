@@ -11,9 +11,10 @@ data = {
 }
 
 
-app.get('/', (req, res) => {
-  res.send(data)
-})
+
+app.get('/', function(req, res){
+res.sendFile(__dirname + '/index.html');
+});
 app.get('/contact', (req, res) => {
   res.send('contact page!')
 })
@@ -30,8 +31,7 @@ app.get('/edits', (req, res) => {
     }
     else {
       // res.send("data retrive succesfully :")
-      r
-      +es.send(data)
+      res.send(data)
     }
   })
 })
