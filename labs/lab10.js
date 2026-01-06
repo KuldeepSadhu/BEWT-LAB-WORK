@@ -1,4 +1,3 @@
-const { error, log } = require('console')
 const express = require('express')
 const app = express()
 const port = 3000
